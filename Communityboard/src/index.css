@@ -8,8 +8,6 @@ body {
 
 th {
   width: 2020px;
-  padding-top:25px;
-  padding-bottom:30px;
 }
 
 td {
@@ -21,21 +19,80 @@ td {
   height: 40px;
 }
 
-.Card {
-  width: 500px;
-  height: 500px; /* Increase the height as needed to make it longer */
-  padding: 20px; /* Adjust padding if necessary */
-  margin: 10px; /* Adjust margin if necessary */
+.CardContainer {
+  display: flex;
+  justify-content: space-between; /* Space the cards evenly within the row */
+  width: 100%;
 }
 
-.Card h6, h5 {
-  line-height: 1.2 px;
-  height: 100 px;
-  align-content: center;
+.Card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* Create a relative positioning context */
 }
+
+.CardImage {
+  border: 3px solid #0c0c0c;
+  width: 100%;
+  position: relative; /* Create a positioning context for the button */
+}
+
+.CardImage img {
+  margin: 0; /* Add this to reset margin */
+  padding: 0; /* Add this to reset padding */
+  max-width: 100%;
+  height: auto;
+}
+
+.LinkButtonContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjust right to move it to the top-right corner */
+}
+
+.LinkButton {
+  width: 50px;
+  height: auto;
+}
+.LinkButtonContainer:hover .LinkButton {
+  transform: scale(1.1); /* Increase the size by 10% */
+}
+.CardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Card h5,
+.Card h6 {
+  margin: 0;
+  line-height: 1.2;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;    /* Hide any overflow text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+}
+
+.Button {
+  display: inline-block;
+  width: 300px; /* Set a fixed width for the button */
+  height: 30px; /* Set a fixed height for the button */
+  background-color: #f5a1af;
+  color: #161010;
+  text-decoration: none;
+  border: 2px solid #e29ba7;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
 
 .pink {
-  background: pink;
+  background: #ffc0cb;
 }
 
 .blue {
