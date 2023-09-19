@@ -2,8 +2,8 @@ import React from "react";
 
 const Card = (props) => {
     // Define the maximum width and height for the image
-    const maxWidth = '500px'; // Adjust this as needed
-    const maxHeight = '400px'; // Adjust this as needed
+    const maxWidth = '515px'; // Adjust this as needed
+    const maxHeight = '415px'; // Adjust this as needed
 
     return (
         <div>
